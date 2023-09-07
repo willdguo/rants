@@ -1,0 +1,105 @@
+html,
+body,
+#root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+  .container.new {
+    justify-content: center;
+}
+
+.logged-out {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-10%);
+  }
+  
+  .logged-out .login-container {
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .logged-out .login-container h1 {
+    margin-top: none;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .logged-out .login-container .newUser {
+    font-style: italic;
+    font-size: 75%;
+    color: #c0c0c0;
+    text-decoration: underline;
+    transition: color ease 0.3s
+  }
+  
+  .logged-out .login-container .newUser:hover{
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .logged-out .login-container input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .logged-out .login-container input::placeholder {
+    opacity: 50%;
+  }
+  
+  .logged-out .login-container .create-user {
+    background: #beb;
+  }
+  
+  .logged-out .login-container .create-user.short {
+    background: #ebb;
+  }
+  
+  .logged-out .login-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logged-out .login-container button:hover {
+    background-color: #000;
+    color: #fff
+  }
+  
+  .logged-out .error-msg {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .logged-out {
+    display: flex;
+    min-height: 100%;
+  }
