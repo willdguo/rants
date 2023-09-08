@@ -1,3 +1,34 @@
+# Project Summary
+
+Rants is a website where users can post, view, and search for rants from others on the platform. 
+
+The project uses a full-stack MERN framework. Users can login/create an account, with personal information encrypted by bcrypt/jsonwebtoken on the backend. Once logged in, users can view other's posts in a scrolling feed. Each rant includes the user/writer of the post, a date timestamp, and the content of the rant. Users can also view other user's profiles at-a-glance by viewing their total number of posts and different posts. Currently, all posts are visible by everyone, and posts are sorted chronologically. 
+
+# Feature List
+- Login + user auth
+- Interactive user platform (can read other user posts)
+- API calls to the backend: https://rants-backend.vercel.app/
+- Connected w/ MongoDB backend, which has collections for users and rants
+- Filtering on-screen data
+- Router navigation across different pages (partially)
+
+# Details for Running
+
+Hop on https://rants-eight.vercel.app/login to access the webapp. You will be prompted with a login screen. Returning users can sign in with their credentials while new users must click "New User?" to create a new account. Usernames must be at least 3 characters and passwords must be at least 8.
+
+Once you are able to log in, you will see a feed of posts. Each of these posts is interactive and can be clicked to see the profile of the rant creator. The user's own profile can also be viewed by clicking "Profile". The "Profile" page displays a user's username along with their past posts (if they have any).
+
+The "Explore" button on the left sidebar allows users to access their feed. This can also be accessed by going to https://rants-eight.vercel.app/feed or clicking the "Welcome, [username]" at the top.
+
+Upon clicking the "Create" button, users have access to a page where they can write new posts in a large text box. The large text box supports extremely long rants, and in fact, in-depth rants are preferred: rants are not allowed to be under 400 characters. Go crazy.
+
+At the top is the toolbar, which includes the filter bar. Instead of searching for different posts, the filter bar is a live filter for users to cut down what they see on screen. The filter bar can be used to find posts from particular dates, users, and/or with certain content (currently, only exact matches for each of these are supported). The filter bar can be used both within one's feed as well as when searching someone's profile. 
+
+The upper toolbar also allows users to log out and share the link with friends.
+
+Happy Ranting!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
