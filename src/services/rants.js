@@ -1,5 +1,6 @@
 import axios from "axios"
-const baseUrl = "/api/rants"
+// const baseUrl = "/api/rants"
+const baseUrl = "https://rants-backend.vercel.app/api/rants"
 
 let token = null
 

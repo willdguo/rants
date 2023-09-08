@@ -1,5 +1,6 @@
 import axios from 'axios'
-const baseUrl = "/api/login"
+// const baseUrl = "/api/login"
+const baseUrl = "https://rants-backend.vercel.app/api/login"
 
 
 const login = async (credentials) => {
