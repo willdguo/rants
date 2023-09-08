@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import loginService from '../services/login'
 import userService from '../services/user'
+import rantsService from '../services/rants'
 
 const Login = ( {user, setUser}) => {
     const [username, setUsername] = useState('')
@@ -22,6 +23,8 @@ const Login = ( {user, setUser}) => {
 
         try {
             const user = await loginService.login({ username, password })
+            rantsService.setToken(user.token)
+
 
             setUser(user)
             setUsername('')
@@ -52,6 +55,7 @@ const Login = ( {user, setUser}) => {
             console.log('logged in: ')
             console.log(newuser)
 
+            rantsService.setToken(newuser.token)
             setUser(newuser)
             setUsername('')
             setPassword('')

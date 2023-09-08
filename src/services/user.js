@@ -6,5 +6,13 @@ const addUser = async ( credentials ) => {
     return response.data
 }
 
+const findUser = async (username) => {
+    const response = await axios.get(`${baseUrl}/${username}`)
+    return response.data
+}
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default {addUser}
+export default {
+    addUser,
+    findUser,
+}

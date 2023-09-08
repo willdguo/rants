@@ -3,6 +3,8 @@ const baseUrl = "/api/login"
 
 
 const login = async (credentials) => {
+    // console.log("attempting login login.js")
+    // console.log(credentials)
     const response = await axios.post(baseUrl, credentials)
     return response.data
 }
