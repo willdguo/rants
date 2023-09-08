@@ -4,6 +4,8 @@ Rants is a website where users can post, view, and search for rants from others 
 
 The project uses a full-stack MERN framework. Users can login/create an account, with personal information encrypted by bcrypt/jsonwebtoken on the backend. Once logged in, users can view other's posts in a scrolling feed. Each rant includes the user/writer of the post, a date timestamp, and the content of the rant. Users can also view other user's profiles at-a-glance by viewing their total number of posts and different posts. Currently, all posts are visible by everyone, and posts are sorted chronologically. 
 
+Time spent: ~3.5 hrs (sorry for the rushed CSS - didn't realize this was due so early)
+
 # Feature List
 - Login + user auth
 - Interactive user platform (can read other user posts)
